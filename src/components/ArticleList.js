@@ -3,7 +3,7 @@ import blogData from "../data/blog"
 
 let articleElements = blogData.posts.map((post,index) => {
     return(
-        <Article {...post}/>
+        <Article key={index} {...post}/>
     )
 })
 
